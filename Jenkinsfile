@@ -13,7 +13,7 @@ pipeline {
         CENTRAL_REPO ='dino-maven-central'
         NEXUSIP = '172.31.19.178'
         NEXUSPORT = '8081'
-        NEXUS_GRP_REPO = ' dino-maven-group'
+        NEXUS_GRP_REPO = 'dino-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
 
     }
