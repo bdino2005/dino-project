@@ -57,8 +57,7 @@ pipeline {
                    -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
               }
             }
-        }
-        
+        }  
         stage("uploadArtifact"){
             steps{
                 nexusArtifactUploader(
