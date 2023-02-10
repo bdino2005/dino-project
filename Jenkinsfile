@@ -62,7 +62,7 @@ pipeline {
         }
         stage(my stage){
             steps {
-               bat label: 'my batch script' ,
+               bat label: 'my batch script' 
                    script: '''@echo off
                         return_1_if_sucess.exe
                         IF %ERRORLEVEL% EQU 1 (exit /B 0) ELSE (exit /B 1)''' 
