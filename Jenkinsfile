@@ -15,8 +15,8 @@ pipeline {
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'dino-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
-        SONNARSERVER = 'sonarserver'
-        SONNARSCANNER = 'sonarscanner'
+        SONARSERVER = 'sonarserver'
+        SONARSCANNER = 'sonarscanner'
 
     }
     stages {
@@ -43,7 +43,7 @@ pipeline {
         }
          stage('Sonar Analysis') {
             environment {
-                scannerHome = "${SONARSCANNER}"
+                scannerHome = tool "${SONARSCANNER}"
             }
             steps {
                withSonarQubeEnv("${SONARSERVER}") {
